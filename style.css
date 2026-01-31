@@ -242,6 +242,19 @@ header h1 {
     animation: pokemonAppear 0.8s ease;
 }
 
+.pokemon-img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+    animation: pokemonAppear 0.8s ease;
+}
+
+.pokemon-emoji {
+    font-size: 8em;
+    animation: pokemonAppear 0.8s ease;
+}
+
 .pokemon-name {
     font-size: 2.5em;
     color: var(--pokemon-red);
@@ -409,6 +422,15 @@ footer p {
     }
     
     .pokemon-image {
+        font-size: 6em;
+    }
+    
+    .pokemon-img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .pokemon-emoji {
         font-size: 6em;
     }
     

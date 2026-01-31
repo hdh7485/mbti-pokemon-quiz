@@ -95,96 +95,112 @@ const pokemonData = {
     "INTJ": {
         name: "뮤츠",
         emoji: "🧬",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
         description: "전략적이고 강력한 당신! 뮤츠처럼 치밀한 계획과 강한 의지로 목표를 이뤄냅니다. 독립적이고 혁신적인 사고로 새로운 길을 개척하는 마스터마인드입니다.",
         traits: ["전략가", "독립적", "혁신적", "분석적"]
     },
     "INTP": {
         name: "후딘",
         emoji: "🧠",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
         description: "논리적이고 호기심 많은 당신! 후딘처럼 지적 탐구를 즐기고 복잡한 문제를 풀어내는 능력이 뛰어납니다. 새로운 아이디어를 탐험하는 것을 좋아하는 과학자형입니다.",
         traits: ["논리적", "분석가", "호기심", "창의적"]
     },
     "ENTJ": {
         name: "리자몽",
         emoji: "🐉",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
         description: "타고난 리더인 당신! 리자몽처럼 강한 카리스마와 리더십으로 팀을 이끕니다. 목표 지향적이고 결단력 있게 일을 추진하는 최고 지도자입니다.",
         traits: ["리더십", "결단력", "야심", "효율적"]
     },
     "ENTP": {
         name: "팬텀",
         emoji: "👻",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
         description: "재치있고 창의적인 당신! 팬텀처럼 장난기 가득하면서도 똑똑하게 상황을 헤쳐나갑니다. 새로운 도전을 즐기는 논쟁을 좋아하는 발명가입니다.",
         traits: ["창의적", "논쟁가", "적응력", "재치있음"]
     },
     "INFJ": {
         name: "에브이",
         emoji: "🔮",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
         description: "직관적이고 신비로운 당신! 에브이처럼 깊은 통찰력으로 사람들을 이해합니다. 이상주의적이고 헌신적으로 세상을 더 나은 곳으로 만들려는 예언자입니다.",
         traits: ["통찰력", "이상주의", "헌신적", "신비로움"]
     },
     "INFP": {
         name: "이브이",
         emoji: "🦊",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
         description: "온화하고 이상적인 당신! 이브이처럼 순수하고 적응력이 뛰어나며 자신만의 길을 찾아갑니다. 진정성과 의미를 중요하게 여기는 중재자입니다.",
         traits: ["이상주의", "온화함", "창의적", "진정성"]
     },
     "ENFJ": {
         name: "가디안",
         emoji: "💖",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
         description: "따뜻하고 카리스마 있는 당신! 가디안처럼 타인을 보호하고 이끄는 능력이 탁월합니다. 사람들을 영감을 주고 성장시키는 타고난 교육자입니다.",
         traits: ["공감능력", "리더십", "이타적", "영감적"]
     },
     "ENFP": {
         name: "피카츄",
         emoji: "⚡",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
         description: "열정적이고 활발한 당신! 피카츄처럼 에너지 넘치고 사람들과 쉽게 친해집니다. 자유로운 영혼으로 모험을 즐기는 열정가입니다.",
         traits: ["열정적", "친근함", "창의적", "낙관적"]
     },
     "ISTJ": {
         name: "거북왕",
         emoji: "🛡️",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
         description: "신뢰할 수 있고 책임감 있는 당신! 거북왕처럼 체계적이고 꾸준하게 임무를 완수합니다. 전통과 규칙을 중시하는 논리주의자입니다.",
         traits: ["책임감", "체계적", "신뢰성", "성실함"]
     },
     "ISFJ": {
         name: "럭키",
         emoji: "🥚",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
         description: "헌신적이고 따뜻한 당신! 럭키처럼 타인을 돌보고 지원하는 것을 좋아합니다. 조용히 주변 사람들을 보살피는 수호자입니다.",
         traits: ["헌신적", "배려심", "온화함", "인내심"]
     },
     "ESTJ": {
         name: "괴력몬",
         emoji: "💪",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png",
         description: "실용적이고 결단력 있는 당신! 괴력몬처럼 강하고 효율적으로 일을 처리합니다. 조직을 이끌고 관리하는 능력이 뛰어난 경영자입니다.",
         traits: ["조직력", "실용적", "결단력", "책임감"]
     },
     "ESFJ": {
         name: "푸린",
         emoji: "🎤",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
         description: "사교적이고 배려심 많은 당신! 푸린처럼 사람들을 즐겁게 하고 화합을 만들어냅니다. 타인의 감정을 잘 읽고 지원하는 친선도모자입니다.",
         traits: ["사교적", "배려심", "협조적", "친절함"]
     },
     "ISTP": {
         name: "스라크",
         emoji: "⚔️",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png",
         description: "실용적이고 논리적인 당신! 스라크처럼 민첩하고 문제를 빠르게 해결합니다. 도구를 다루는 것을 좋아하는 장인입니다.",
         traits: ["실용적", "독립적", "민첩함", "분석적"]
     },
     "ISFP": {
         name: "이상해씨",
         emoji: "🌱",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
         description: "온화하고 예술적인 당신! 이상해씨처럼 자연을 사랑하고 평화로운 성향입니다. 현재를 즐기며 자신만의 방식으로 표현하는 모험가입니다.",
         traits: ["예술적", "온화함", "자유로움", "감각적"]
     },
     "ESTP": {
         name: "윈디",
         emoji: "🔥",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png",
         description: "활동적이고 대담한 당신! 윈디처럼 에너지 넘치고 행동력이 뛰어납니다. 현재를 즐기며 새로운 경험을 추구하는 기업가입니다.",
         traits: ["활동적", "대담함", "사교적", "실용적"]
     },
     "ESFP": {
         name: "꼬부기",
         emoji: "💧",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
         description: "즐거움을 사랑하는 당신! 꼬부기처럼 유쾌하고 사람들과 어울리는 것을 좋아합니다. 순간을 즐기며 주변을 밝게 만드는 엔터테이너입니다.",
         traits: ["유쾌함", "사교적", "즉흥적", "낙관적"]
     }
@@ -265,7 +281,17 @@ function showResults() {
     const pokemon = pokemonData[mbti];
     
     document.getElementById('mbti-badge').textContent = mbti;
-    document.getElementById('pokemon-image').textContent = pokemon.emoji;
+    
+    // 이모지와 실제 포켓몬 이미지 표시
+    const pokemonImageContainer = document.getElementById('pokemon-image');
+    pokemonImageContainer.innerHTML = `
+        <img src="${pokemon.image}" 
+             alt="${pokemon.name}" 
+             class="pokemon-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="pokemon-emoji" style="display:none;">${pokemon.emoji}</div>
+    `;
+    
     document.getElementById('pokemon-name').textContent = pokemon.name;
     document.getElementById('pokemon-description').textContent = pokemon.description;
     
