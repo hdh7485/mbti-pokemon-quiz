@@ -1,31 +1,25 @@
-// MBTI Questions - 각 차원당 3문제
+// MBTI Questions - 각 차원당 3문제, 선택지 2개로 명확히 구분
 const questions = [
     // E/I Questions
     {
         question: "주말에 친구들과 파티가 있다면?",
         options: [
             { text: "신난다! 사람들과 어울리는 게 즐거워", dimension: "E", value: 2 },
-            { text: "괜찮은데 좀 피곤할 것 같아", dimension: "I", value: 1 },
-            { text: "집에서 쉬고 싶은데... 피곤해", dimension: "I", value: 2 },
-            { text: "적당히 가서 일찍 올래", dimension: "E", value: 1 }
+            { text: "집에서 쉬고 싶은데... 피곤해", dimension: "I", value: 2 }
         ]
     },
     {
         question: "새로운 사람을 만났을 때 당신은?",
         options: [
             { text: "먼저 말을 걸고 친해지려고 노력해", dimension: "E", value: 2 },
-            { text: "상대방이 말을 걸면 대답해", dimension: "I", value: 2 },
-            { text: "자연스럽게 이야기 나눠", dimension: "E", value: 1 },
-            { text: "조용히 관찰하면서 천천히 알아가", dimension: "I", value: 1 }
+            { text: "상대방이 말을 걸면 대답하며 천천히 알아가", dimension: "I", value: 2 }
         ]
     },
     {
         question: "에너지 충전은 어떻게?",
         options: [
             { text: "친구들과 수다 떨면서!", dimension: "E", value: 2 },
-            { text: "혼자만의 시간을 가지면서", dimension: "I", value: 2 },
-            { text: "적당히 사람도 만나고 혼자도 있고", dimension: "E", value: 1 },
-            { text: "조용한 곳에서 명상이나 독서", dimension: "I", value: 1 }
+            { text: "혼자만의 시간을 가지면서", dimension: "I", value: 2 }
         ]
     },
     // S/N Questions
@@ -33,27 +27,21 @@ const questions = [
         question: "새로운 아이디어를 듣을 때:",
         options: [
             { text: "구체적으로 어떻게 하는지 궁금해", dimension: "S", value: 2 },
-            { text: "큰 그림과 가능성이 보여", dimension: "N", value: 2 },
-            { text: "실현 가능한지부터 따져봐", dimension: "S", value: 1 },
-            { text: "미래에 어떤 영향을 줄지 상상해", dimension: "N", value: 1 }
+            { text: "큰 그림과 미래의 가능성이 보여", dimension: "N", value: 2 }
         ]
     },
     {
         question: "여행 계획을 세울 때:",
         options: [
             { text: "시간표와 예약을 꼼꼼히 확인", dimension: "S", value: 2 },
-            { text: "대략적인 방향만 정하고 즉흥적으로", dimension: "N", value: 2 },
-            { text: "주요 장소만 정하고 여유있게", dimension: "S", value: 1 },
-            { text: "특별한 경험을 찾아다녀", dimension: "N", value: 1 }
+            { text: "대략적인 방향만 정하고 즉흥적으로", dimension: "N", value: 2 }
         ]
     },
     {
         question: "문제를 해결할 때:",
         options: [
-            { text: "지금 당장 해결 가능한 방법을 찾아", dimension: "S", value: 2 },
-            { text: "여러 가능성을 생각해봐", dimension: "N", value: 2 },
-            { text: "경험을 바탕으로 해결해", dimension: "S", value: 1 },
-            { text: "창의적인 해결책을 찾아봐", dimension: "N", value: 1 }
+            { text: "지금 당장 해결 가능한 현실적 방법을 찾아", dimension: "S", value: 2 },
+            { text: "여러 가능성을 생각하며 창의적으로 접근해", dimension: "N", value: 2 }
         ]
     },
     // T/F Questions
@@ -61,27 +49,21 @@ const questions = [
         question: "친구가 고민 상담을 한다면:",
         options: [
             { text: "논리적으로 분석하고 해결책 제시", dimension: "T", value: 2 },
-            { text: "먼저 공감하고 위로해줘", dimension: "F", value: 2 },
-            { text: "객관적으로 상황을 정리해줘", dimension: "T", value: 1 },
-            { text: "같이 감정을 나누고 응원해", dimension: "F", value: 1 }
+            { text: "먼저 공감하고 위로해줘", dimension: "F", value: 2 }
         ]
     },
     {
         question: "의견 충돌이 생겼을 때:",
         options: [
             { text: "논리적으로 토론하면서 최선의 답 찾기", dimension: "T", value: 2 },
-            { text: "서로의 감정을 배려하면서 합의점 찾기", dimension: "F", value: 2 },
-            { text: "사실과 데이터로 설명해", dimension: "T", value: 1 },
-            { text: "조화롭게 해결하려고 노력해", dimension: "F", value: 1 }
+            { text: "서로의 감정을 배려하면서 합의점 찾기", dimension: "F", value: 2 }
         ]
     },
     {
         question: "결정을 내릴 때 중요한 건:",
         options: [
             { text: "효율성과 합리성", dimension: "T", value: 2 },
-            { text: "관계된 사람들의 감정", dimension: "F", value: 2 },
-            { text: "객관적 기준과 공정성", dimension: "T", value: 1 },
-            { text: "가치관과 의미", dimension: "F", value: 1 }
+            { text: "관계된 사람들의 감정과 가치관", dimension: "F", value: 2 }
         ]
     },
     // J/P Questions
@@ -89,27 +71,21 @@ const questions = [
         question: "하루 일과는?",
         options: [
             { text: "계획대로 차근차근 진행", dimension: "J", value: 2 },
-            { text: "그때그때 하고 싶은 대로", dimension: "P", value: 2 },
-            { text: "큰 틀만 정하고 유연하게", dimension: "P", value: 1 },
-            { text: "체크리스트 만들어서 실행", dimension: "J", value: 1 }
+            { text: "그때그때 하고 싶은 대로", dimension: "P", value: 2 }
         ]
     },
     {
         question: "프로젝트 마감이 다가온다면:",
         options: [
             { text: "미리미리 준비해서 여유있게 마무리", dimension: "J", value: 2 },
-            { text: "마감 직전에 집중력 폭발!", dimension: "P", value: 2 },
-            { text: "조금씩 준비하다가 마지막에 마무리", dimension: "J", value: 1 },
-            { text: "아이디어가 떠오를 때 집중해서 작업", dimension: "P", value: 1 }
+            { text: "마감 직전에 집중력 폭발!", dimension: "P", value: 2 }
         ]
     },
     {
         question: "주말 계획은:",
         options: [
             { text: "미리 세워두고 그대로 실행", dimension: "J", value: 2 },
-            { text: "그날 기분에 따라 즉흥적으로", dimension: "P", value: 2 },
-            { text: "대략 정하되 변경 가능하게", dimension: "P", value: 1 },
-            { text: "시간표 짜서 알차게 보내기", dimension: "J", value: 1 }
+            { text: "그날 기분에 따라 즉흥적으로", dimension: "P", value: 2 }
         ]
     }
 ];
