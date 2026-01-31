@@ -7,7 +7,6 @@
     --light: #f8f9fa;
     --pokemon-red: #ee1515;
     --pokemon-blue: #3d7dca;
-    --gradient: linear-gradient(135deg, #ffcb05 0%, #3d7dca 100%);
 }
 
 * {
@@ -18,15 +17,48 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: var(--gradient);
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+    position: relative;
     min-height: 100vh;
     padding: 20px;
     color: var(--dark);
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(255, 203, 5, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 70% 20%, rgba(238, 21, 21, 0.15) 0%, transparent 40%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+body::after {
+    content: '⚡🔥💧🌿✨';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20em;
+    opacity: 0.03;
+    z-index: 0;
+    pointer-events: none;
+    letter-spacing: 0.2em;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 header {
