@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="당신의 MBTI 성격 유형에 맞는 포켓몬을 찾아보세요! 12개의 질문으로 당신의 파트너 포켓몬을 추천해드립니다.">
+    <meta name="keywords" content="MBTI, 포켓몬, 성격테스트, MBTI 테스트, 포켓몬 추천, 성격 유형">
+    <meta property="og:title" content="당신의 MBTI 포켓몬은? 🎮">
+    <meta property="og:description" content="12개 질문으로 알아보는 나와 찰떡인 포켓몬!">
+    <meta property="og:type" content="website">
+    <title>당신의 MBTI 포켓몬은? 🎮 | 성격 유형 테스트</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google AdSense Placeholder -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+         crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 당신의 MBTI 포켓몬은? 🎮</h1>
+            <p class="subtitle">12개 질문으로 알아보는 나와 찰떡인 포켓몬!</p>
+        </header>
+
+        <!-- Ad Space Top -->
+        <div class="ad-space">
+            <!-- Ad will go here -->
+        </div>
+
+        <div id="quiz-container">
+            <div id="start-screen" class="screen active">
+                <div class="start-content">
+                    <div class="pokemon-showcase">
+                        <span class="pokemon-icon">⚡</span>
+                        <span class="pokemon-icon">🔥</span>
+                        <span class="pokemon-icon">💧</span>
+                        <span class="pokemon-icon">🍃</span>
+                    </div>
+                    <h2>나와 어울리는 포켓몬은?</h2>
+                    <p>MBTI 성격 유형 기반 포켓몬 추천</p>
+                    <p class="challenge">✨ 16가지 포켓몬 중 하나가 당신을 기다립니다 ✨</p>
+                    <button onclick="startQuiz()" class="btn-start">테스트 시작하기</button>
+                </div>
+            </div>
+
+            <div id="quiz-screen" class="screen">
+                <div class="progress-bar">
+                    <div id="progress" class="progress-fill"></div>
+                </div>
+                <div class="question-number" id="question-number">질문 1 / 12</div>
+                
+                <div class="question-container">
+                    <h2 id="question-text" class="question-text"></h2>
+                    <div id="options-container" class="options-container"></div>
+                </div>
+            </div>
+
+            <div id="result-screen" class="screen">
+                <div class="result-content">
+                    <div class="mbti-badge" id="mbti-badge"></div>
+                    <h2 id="result-title">당신의 MBTI는...</h2>
+                    <div class="pokemon-result">
+                        <div class="pokemon-image" id="pokemon-image">
+                            <!-- Pokemon emoji will be here -->
+                        </div>
+                        <h3 id="pokemon-name" class="pokemon-name"></h3>
+                    </div>
+                    <p id="pokemon-description" class="pokemon-description"></p>
+                    <div class="personality-traits" id="personality-traits"></div>
+                    
+                    <div class="share-buttons">
+                        <button onclick="shareTwitter()" class="btn-share twitter">Twitter 공유</button>
+                        <button onclick="copyLink()" class="btn-share copy">링크 복사</button>
+                    </div>
+                    
+                    <button onclick="restartQuiz()" class="btn-restart">다시 하기</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space Bottom -->
+        <div class="ad-space">
+            <!-- Ad will go here -->
+        </div>
+
+        <footer>
+            <p>Made with ❤️ for Pokémon fans | © 2026</p>
+            <p class="disclaimer">Pokémon is © Nintendo/Creatures Inc./GAME FREAK inc.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
